@@ -24,7 +24,17 @@ Follow the following steps to deploy the sample on your Azure Storage account. O
 - Open the sample in VSCode using `File>Open Folder` menu
 - On the terminal, run `npm run build` to build the React app
 - Right click `build` folder in VSCode, and click `Deploy to Static Website`
-- Choose your storage account
+- Choose your storage account to deploy the static website
+
+Once you have deployed, configure the container as public, and set the CORS settings to allow access from the static website endpoint.
+- Go to Azure Portal, select your storage account
+- Click CORS on the menu. And add a new row
+  * Allowed origin: https://staticwebsitedemo.z20.web.core.windows.net (your static website endpoint)
+  * Allowed methods: GET, OPTIONS, DELETE, PUT, HEAD
+  * Allowed headers and exposed headers: *
+- Go to Blobs menu
+- Click on the `...` next to the desired blob container (in the sample, $web is used)
+- Click on `Access Policy` and configure `Public Access for the Container`. This is required for anonymously listing blobs using the SDK.
 
 ![Blob browser - Static website](https://raw.githubusercontent.com/seguler/static-website-blob-browser/master/staticwebsitedemo.jpg)
 
