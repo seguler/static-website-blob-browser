@@ -1,0 +1,28 @@
+{
+  "name": "blobbrowser",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@azure/storage-blob": "^10.1.0-preview",
+    "namor": "^1.1.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-scripts": "2.0.5",
+    "react-table": "^6.8.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
