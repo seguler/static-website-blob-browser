@@ -8,6 +8,9 @@ author: seguler
 
 This sample application can be used as a static website on Azure Storage to list the contents of a Blob container (anonymously). The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The sample assumes your blob container is made public, however it can be modified to use Azure Active Directory authentication. The file browser also allows downloading each file with a single click.
 
+## Demo
+Try the app here: https://staticwebsitedemo.z20.web.core.windows.net/ 
+
 ## Pre-requsites
 - Create an [Azure Storage account](https://ms.portal.azure.com/#create/Microsoft.StorageAccount-ARM.3.0.5) (GPv2) and enable [Static Websites](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website)
 - Install VSCode, and Azure Storage extension (optional)
