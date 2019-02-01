@@ -23,9 +23,9 @@ Follow the following steps to deploy the sample on your Azure Storage account. O
 `git clone https://github.com/seguler/static-website-blob-browser`
 - Launch VS Code. Log on to the Azure Storage extension.
 - Install create-react-app using a terminal (VSCode)
-`npm install -g create-react-app`
+`npm install -g create-react-app` in 'static-website-blob-browser' folder
 - Open the sample in VSCode using `File>Open Folder` menu
-- On the terminal, run `npm run build` to build the React app
+- On the terminal, run `npm install` and then `npm run build` to build the React app
 - Right click `build` folder in VSCode, and click `Deploy to Static Website`
 - Choose your storage account to deploy the static website
 
